@@ -12,18 +12,6 @@ ALLOW_MISSING_DEPENDENCIES := true
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
-# A/B
-AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS += \
-    system \
-    boot \
-    vbmeta_system \
-    product \
-    vbmeta_vendor \
-    dtbo \
-    system_ext \
-    vendor \
-    vbmeta
 BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Architecture
