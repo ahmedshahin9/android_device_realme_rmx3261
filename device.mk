@@ -56,13 +56,14 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
     libhealthd.$(PRODUCT_PLATFORM)
 
-# Boot control HAL
+# Boot Control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
+    android.hardware.boot@1.2-impl \
+    android.hardware.boot@1.2-impl.recovery \
+    android.hardware.boot@1.2-service
 
-PRODUCT_PACKAGES += \
-    bootctrl.ums512
+PRODUCT_PACKAGES_DEBUG += \
+    bootctrl
 
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.ums512 \
