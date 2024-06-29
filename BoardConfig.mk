@@ -103,6 +103,13 @@ TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_SYSTEM_EXT = system_ext
 
+# Use mke2fs to create ext4 images
+TARGET_USES_MKE2FS := true
+
+# Metadata
+BOARD_USES_METADATA_PARTITION := true
+BOARD_ROOT_EXTRA_FOLDERS += metadata
+
 # Platform
 TARGET_BOARD_PLATFORM := ums512
 
