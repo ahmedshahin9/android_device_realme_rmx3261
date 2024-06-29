@@ -7,6 +7,8 @@
 
 LOCAL_PATH := device/realme/RMX3261
 
+PRODUCT_PLATFORM := ums512
+
 # A/B
 AB_OTA_PARTITIONS += \
     boot \
