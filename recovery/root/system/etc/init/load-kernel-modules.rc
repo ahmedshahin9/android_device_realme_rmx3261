@@ -1,2 +1,0 @@
-on early-init
-    exec u:r:modprobe:s0 -- /system/bin/modprobe -d /vendor/lib/modules --all=/vendor/lib/modules/modules.load.recovery
