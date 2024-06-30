@@ -13,23 +13,15 @@ PRODUCT_PLATFORM := ums512
 AB_OTA_PARTITIONS += \
     boot \
     dtbo \
-    gz \
-    lk \
-    logo \
-    md1img \
-    preloader \
     product \
-    scp \
-    spmfw \
-    sspm \
     system \
     system_ext \
-    tee \
     vbmeta \
     vbmeta_system \
+    vbmeta_system_ext \
+    vbmeta_product \
     vbmeta_vendor \
-    vendor \
-    vendor_boot
+    vendor 
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
